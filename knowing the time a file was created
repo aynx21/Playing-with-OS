@@ -1,0 +1,7 @@
+import os
+from datetime import datetime
+
+os.chdir("/Users/Ayan/Python class/WebScraping")
+
+mode_time = os.stat('C:\Users\Ayan\Desktop\Telegram bot').st_mtime
+print(datetime.fromtimestamp(mode_time))
